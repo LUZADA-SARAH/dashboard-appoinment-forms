@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us | Sulit & Bagasan Dental Office</title>
+		<link rel="stylesheet" type="text/css" href="transactions-css.css">
+        <script src="transactions-jscript.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+		<header>
+			<img class="logo" src="images/sbdo-logo.jpeg" alt="sulit and bagasan dental office logo" />
+			<div class="company_name">Sulit & Bagasan Dental Office</div>
+			<nav>
+				<ul class="nav_links">
+					<li class="nav__item">
+						<a class="nav__link" href="index.html">Home</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="about.html">About Us</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="services.html">Services</a>
+					</li>
+					<li class="nav__item">
+                        <a class="nav__link contactUsLink" href="contact-us-1.html">Contact Us</a>
+					</li>
+					<li class="nav__item">
+						<a href="account-dashboard-html.html" class="nav__link">
+							<div class="profile-frame"></div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="profile-container">
+			<div class="profile-info">
+				<div class="profile-picture">
+					<p class="profile-label">PROFILE PICTURE</p>
+				</div>
+				<div class="profile-details">
+					<p class="profile-name">USERNAME</p>
+					<p class="profile-email">EMAIL ADDRESS</p>
+					<p class="profile-number">PHONE NUMBER</p>
+				</div>
+			</div>
+			<a href="#" class="btn btn-primary edit-profile" onclick="showChangeProfilePictureModal()">CHANGE</a>            
+			<div class="divider"></div>
+			<div class="row">
+				<div class="buttons-transac-appoint">
+					<a href="transactions-html.html" class="btn btn-primary">TRANSACTION</a>
+					<a href="upcoming-announcements-html.html" class="btn btn-primary">APPOINTMENTS</a>
+				</div>
+			</div>
+		</div>
+		<div id="overlay" class="overlay"></div>
+		<div id="modalChangeProfilePicture" class="modal">
+			<!-- Close button -->
+			<span class="close-btn2" onclick="closeModal()">X</span>
+			<div class="container">
+				<div class="change-profile-picture-modal">
+					<h2>CHANGE PROFILE PICTURE</h2>
+				</div>
+				<!-- Inside the "change-profile-picture-modal" div -->
+				<form id="formChangeProfilePicture" onsubmit="submitProfilePicture(event)">
+					<label for="profilePicture">Please upload your new profile picture:</label>
+					<input type="file" id="profilePicture" name="profilePicture" accept="image/*" required><br>
+					<input type="submit" value="UPLOAD">
+				</form>
+			</div>
+		</div>
+		<div class="transac-history">
+			<p>TRANSACTION HISTORY</p>
+			<div class="line1"></div>
+			<div class="sort">
+				<button class="sortByMonth">SORT BY MONTH</button>
+				<button class="sortByStatus">SORT BY STATUS</button>
+			</div>
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th>DATE</th>
+							<th>NAME</th>
+							<th>AMOUNT</th>
+							<th>STATUS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>DD/MM/YYYY</td>
+							<td>PATIENT NAME</td>
+							<td>LOREM IPSUM</td>
+							<td class="status-done">DONE</td>
+						</tr>
+						<tr>
+							<td>DD/MM/YYYY</td>
+							<td>PATIENT NAME</td>
+							<td>LOREM IPSUM</td>
+							<td class="status-resched">RESCHED</td>
+						</tr>
+						<tr>
+							<td>DD/MM/YYYY</td>
+							<td>PATIENT NAME</td>
+							<td>LOREM IPSUM</td>
+							<td class="status-cancelled">CANCELLED</td>
+						</tr>
+						<tr>
+							<td>DD/MM/YYYY</td>
+							<td>PATIENT NAME</td>
+							<td>LOREM IPSUM</td>
+							<td class="status-done">DONE</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="page-buttons">
+				<button class="prev">PREV</button>
+				<button class="page-button">1</button>
+				<button class="page-button">2</button>
+				<button class="page-button">3</button>
+				<button class="next">NEXT</button>
+			</div>
+		</div>
+		<footer>
+			<div class="operating_hrs">
+				OPERATING HOURS
+				<p class="LOREM_IPSUM">MONDAY-SUNDAYS</p>
+				<p class="LOREM_IPSUM">11 AM</p>
+				<p class="LOREM_IPSUM">5 PM</p>
+			</div>
+			<div class="footer_list">
+				<div class="company_logo">
+					<img class="footer_logo" src="images/sbdo-logo.jpeg" alt="sulit and bagasan dental office logo" />
+				</div>
+				<div class="company_name_footer">Sulit & Bagasan Dental Office</div>
+				<div class="footer_buttons">
+					<a href="contacts.html">
+					<img class="icon_link phone" src="images/phone-icon.png" alt="phone icon" />
+					</a>
+					<a href="contacts.html">
+					<img class="icon_link mail" src="images/mail-icon.png" alt="mail icon" />
+					</a>
+					<a href="contacts.html">
+					<img class="icon_link location" src="images/location-icon.png" alt="location pin icon" />
+					</a>
+				</div>
+			</div>
+			<div class="contact_details">
+				CONTACT DETAILS
+				<p class="LOREM_IPSUM NUMBER">0917 110 3983 / 0999 884 0454</p>
+				<p class="LOREM_IPSUM EMAIL">sulitandbagasan@gmail.com</p>
+			</div>
+		</footer>
+	</body>
+</html>
